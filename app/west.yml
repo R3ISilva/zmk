@@ -4,7 +4,7 @@ manifest:
       url-base: https://github.com/zephyrproject-rtos
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: R3ISilva  # Add your GitHub username as a remote
+    - name: R3ISilva # Add your GitHub username as a remote
       url-base: https://github.com/R3ISilva
   projects:
     - name: zephyr
@@ -40,7 +40,7 @@ manifest:
       path: modules/msgs/zmk-studio-messages
       remote: zmkfirmware
     - name: shield-module-36key # My custom shield module
-      path: boards/shields/36keyendgame  # Destination folder in the ZMK repo
+      path: boards/shields/36keyendgame # Destination folder in the ZMK repo
       remote: R3ISilva
   self:
     west-commands: scripts/west-commands.yml
