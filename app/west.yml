@@ -40,7 +40,7 @@ manifest:
       path: modules/msgs/zmk-studio-messages
       remote: zmkfirmware
 
-      # Add the custom shield module
+      # Custom shield module
     - name: shield-module-36key
       path: boards/shields/36keyendgame  # Destination folder in the ZMK repo
       revision: main  # Specify branch or commit if needed
