@@ -155,9 +155,6 @@ jobs:
             const nightly = `${{ needs.nightly.outputs.nightly-include }}` || "[]";
 
             const combined = [
-              ...JSON.parse(coreCoverage),
-              ...JSON.parse(boardChanges),
-              ...JSON.parse(nightly),
               { board: 'nice_nano_v2', shield: '36keyendgame_left' },  // Custom shield - left
               { board: 'nice_nano_v2', shield: '36keyendgame_right' }  // Custom shield - right
             ];
