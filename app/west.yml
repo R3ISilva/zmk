@@ -41,7 +41,7 @@ manifest:
       remote: zmkfirmware
     - name: shield-module-36key # My custom shield module
       path: boards/shields/36keyendgame # Destination folder in the ZMK repo
-      revision: main # repo branch
+      revision: main # Repo branch
       remote: R3ISilva
   self:
     west-commands: scripts/west-commands.yml
