@@ -155,8 +155,9 @@ jobs:
             const nightly = `${{ needs.nightly.outputs.nightly-include }}` || "[]";
 
             const combined = [
-              { board: 'nice_nano_v2', shield: '36keyendgame_left' },
-              { board: 'nice_nano_v2', shield: '36keyendgame_right' }
+              ...JSON.parse(coreCoverage),
+              ...JSON.parse(boardChanges),
+              ...JSON.parse(nightly),
             ];
             const combinedUnique = [...new Map(combined.map(el => [JSON.stringify(el), el])).values()];
 
